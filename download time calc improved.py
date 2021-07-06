@@ -1,13 +1,13 @@
 def download_time_calc():
-    size = int(input("Enter download size in GB: "))
+    size = float(input("Enter download size in GB: "))
 
     speed_choice = int(input("""For speed in mBit, press 1:
 For speed in mByte, press 2: """))
 
     if speed_choice == 1:
-        speed_b = int(input("Enter download speed in mBit: "))
+        speed_b = float(input("Enter download speed in mBit: "))
     elif speed_choice == 2:
-        speed_b = int(input("Enter download speed in mByte: "))
+        speed_b = float(input("Enter download speed in mByte: "))
     else:
         print("Error")
 
@@ -53,5 +53,5 @@ while True:
     download_time_calc()
 
     redo = input("Enter 'Y' to redo: ")
-    if redo != "Y":
+    if redo.upper() != "Y":
         break
