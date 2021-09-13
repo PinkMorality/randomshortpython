@@ -1,2 +1,2 @@
 # randomshortpython
-Random simple ideas I had
+Random simple ideas
