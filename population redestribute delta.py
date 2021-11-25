@@ -3,7 +3,7 @@ import csv
 total_population = 0
 total_area = 0
 
-with open("C:/Users/Aditya/Desktop/table1.csv", newline="") as csvfile:
+with open("C:\Users\Aditya\AppData\Roaming\JetBrains\PyCharmCE2020.3\scratches\population redestribute delta.csv", newline="") as csvfile:
     dict1 = csv.DictReader(csvfile)
     dict2 = csv.DictReader(csvfile)
 
