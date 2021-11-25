@@ -3,7 +3,7 @@ import csv
 total_population = 0
 total_area = 0
 
-with open("C:\Users\Aditya\AppData\Roaming\JetBrains\PyCharmCE2020.3\scratches\population redestribute delta.csv", newline="") as csvfile:
+with open(r"C:\Users\Aditya\AppData\Roaming\JetBrains\PyCharmCE2020.3\scratches\population redestribute delta.csv", newline="") as csvfile:
     dict1 = csv.DictReader(csvfile)
     dict2 = csv.DictReader(csvfile)
 
@@ -43,3 +43,6 @@ with open("C:\Users\Aditya\AppData\Roaming\JetBrains\PyCharmCE2020.3\scratches\p
         row.update({"Population": population2})
         row.setdefault("Change",change)
         print(f"{row}")
+        
+        
+input("Exit")
